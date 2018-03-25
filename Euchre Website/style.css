@@ -95,3 +95,15 @@ label {
 	margin: 4px 2px;
 	border-radius: 30px;
 }
+
+#upload_button {
+    display: none;
+    
+    border: 0px;
+    background: linear-gradient(180deg, #f44, #811);
+    border-radius: 5px;
+    
+    color: #fff;
+    
+    padding: 5px;
+}

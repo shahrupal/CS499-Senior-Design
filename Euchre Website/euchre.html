@@ -3,9 +3,15 @@
 
 
 <head>
+
+	<!-- Tab Title -->
 	<title>Euchre Hand Recognizer</title>
+	
+	<!-- Link to CSS Sheet -->
 	<link rel="stylesheet" href="style.css" type="text/css" />
+
 </head>
+
 <body>
 
 	<!-- Navigation Bar -->
@@ -19,25 +25,52 @@
 		</nav>
 	</header>
 
+	<!-- Page Title -->
 	<div class="title">
 		<h1>Euchre Hand</br>Recognition</h1>
 		<h2>Neural Nets for Games</h2>
 	</div>
 
+	</br></br></br></br>
+
 	<!-- Upload File -->
 	<form enctype="multipart/form-data" method="post" action="#">
-		<button id="filebutton" type="button">
-			<label for="fileupload">Browse</label>
-		</button>
-	   	<input id="fileupload" name="filename" type="file" />
-		<input id="submitbutton" value="Submit" type="submit" />
+		<center>
+
+			<form>
+
+				<!-- File Upload Button -->
+				<p><button id="filebutton">Browse</button></p>
+				<p><input  id="fileupload" name="your_name" type="file"/></p>
+
+				<!-- Submit Button -->
+				<input id="submitbutton" value="Submit" type="submit" />
+			
+			</form>
+
+			<!-- Display Name of File Chosen -->
+			<!-- Source: http://jsfiddle.net/YMMLQ/ -->
+			<script>
+				var button = document.getElementById('filebutton');
+				var input  = document.getElementById('fileupload');
+
+				input.style.display = 'none';
+				button.style.display = 'initial';
+
+				button.addEventListener('click', function (e) {
+				    e.preventDefault();				    
+				    input.click();
+				});
+
+				input.addEventListener('change', function () {
+				   button.innerText = this.value; 
+				});
+			</script>
+
+		</center>
 	</form>
 
 
-
 </body>
-
-
-
 
 </html>
