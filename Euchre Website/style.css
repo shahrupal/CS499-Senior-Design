@@ -1,13 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono);
+
 body {
 	margin: 0;
 	padding: 0;
+	height: 100%;	
 	font-family: 'Arial', serif;
-	background-color: #424344;
-
+	background-image: url("bannerimg.jpg");
+    background-position: center;
 }
 
 header {
-	background: #55d6aa;
+	background: #ffffff;
 }
 
 nav {
@@ -35,5 +38,14 @@ nav ul > li > a {
 }
 
 nav ul > li > a:hover {
-	color: #ffffff;
+	color: #c1c1c1;
+}
+
+.title {
+	font-family: 'IBM Plex Mono', serif;
+	text-align: center;
+}
+
+.title > h1 {
+	font-size: 5em; 
 }
