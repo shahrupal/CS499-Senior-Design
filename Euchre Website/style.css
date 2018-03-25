@@ -1,10 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+
 
 body {
 	margin: 0;
 	padding: 0;
 	height: 100%;	
-	font-family: 'Arial', serif;
+	font-family: 'Arial', sans-serif;
 	background-image: url("bannerimg.jpg");
     background-position: center;
 }
@@ -96,14 +98,20 @@ label {
 	border-radius: 30px;
 }
 
-#upload_button {
-    display: none;
-    
-    border: 0px;
-    background: linear-gradient(180deg, #f44, #811);
-    border-radius: 5px;
-    
-    color: #fff;
-    
-    padding: 5px;
+.about-us-text, .how-to-use-text {
+	background-color: #9dc0f9;
+	width: 75%;
+    border: 25px solid #9dc0f9;
+    padding: 25px;
+    margin: 25px;
+    opacity: 0.85;
+}
+
+.about-us-text, .how-to-use-text > h1 {
+	font-family: 'Roboto Mono', serif;
+	text-align: center;
+}
+
+.about-us-text, .how-to-use-text {
+	text-align: left;
 }
